@@ -1,27 +1,38 @@
 # Command_docker
                                                      Comando Utiles para Docker
 
-Estos son los comandos que he necesitado para hacer funcionar Docker en un entorno Vagrant.
+Estos son los comandos que he necesitado para hacer funcionar Docker
+
 Construir una imagen:
 docker build --build-arg -t <nombre_imagen> .
+
 Construir una imagen detrás de un proxy:
 docker build --build-arg http_proxy=http://<proxy>:<port> --build-arg https_proxy=http://<proxy>:<port> -t <nombre_imagen> .
+  
 Hacer pull de una imagen ya construida:
 docker pull nginx:1.13-alpine
+
 Añadir un TAG a una imagen:
 docker tag <nombre_imagen> <nombre_imagen>:<tag>
+  
 Inspeccionar una imagen:
 docker inspect <nombre_imagen>
+
 Guardar imagen en un fichero TAR:
 docker save <nombre_imagen> > <fichero>.tar
+  
 Eliminar imagen:
 docker rmi <nombre_imagen>:<TAG>
+  
 Eliminar todas las imágenes:
 docker rmi `docker images -q`
+
 Ejecutar contenedor:
 docker run -v <unidad_host>:<unidad_docker> -it --name <nombre_contenedor> -d <nombre_imagen>
+
 Eliminar contenedor:
 docker rm <nombre_contenedor>
+
 Eliminar todos los contenedores parados:
 docker rm `docker ps -a -q`
 Lista de imágenes:
