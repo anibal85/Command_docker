@@ -1,5 +1,5 @@
 # Command_docker
-Comando Utiles para Docker
+                                                     Comando Utiles para Docker
 
 Estos son los comandos que he necesitado para hacer funcionar Docker en un entorno Vagrant.
 Construir una imagen:
