@@ -35,6 +35,7 @@ docker rm <nombre_contenedor>
 
 Eliminar todos los contenedores parados:
 docker rm `docker ps -a -q`
+
 Lista de imágenes:
 docker images
 Ver contenido de una imagen:
@@ -49,8 +50,8 @@ docker exec -i -t a9ddb677957f /bin/bash
 # Build Docker-Compose:
 docker-compose build
   
-# Configurar Dockerfile para mantener el docker en ejecución:
-CMD tail -f /dev/null
+# Configurar Dockerfile:
+CMD ["tail", "/dev/null"]
   
 # Up Docker-Compose segundo plano:
 docker-compose up -d
