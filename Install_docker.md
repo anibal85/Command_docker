@@ -54,6 +54,7 @@ Para instalar una versión específica de Docker Engine, enumere las versiones d
 
 $ apt-cache madison docker-ce
 
+######################################################################################################################
   * docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
   
   * docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
@@ -61,10 +62,12 @@ $ apt-cache madison docker-ce
   * docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
   
   * docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-  ...
-si. Instale una versión específica utilizando la cadena de versión de la segunda columna, por ejemplo 5:18.09.1~3-0~ubuntu-xenial,.
+ ########################################################################################################################
+  
+Instale una versión específica utilizando la cadena de versión de la segunda columna, por ejemplo 5:18.09.1~3-0~ubuntu-xenial,.
 
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
+
 
 Verifique que Docker Engine esté instalado correctamente ejecutando la hello-world imagen.
 
