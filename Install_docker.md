@@ -19,16 +19,17 @@ $ sudo apt-get install \
     
  Agregue la clave GPG oficial de Docker:
 
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 Verifique que ahora tiene la clave con la huella digital 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88, buscando los últimos 8 caracteres de la huella digital.
 
 $ sudo apt-key fingerprint 0EBFCD88
-
+___________________________________________________________________
 pub   rsa4096 2017-02-22 [SCEA]
       9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
 uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
 sub   rsa4096 2017-02-22 [S]
+_____________________________________________________________________
 
 Use el siguiente comando para configurar el repositorio estable . Para agregar el repositorio nocturno o de prueba , agregue la palabra nightlyo test(o ambos) después de la palabra stableen los comandos a continuación. Aprenda sobre canales nocturnos y de prueba .
 
