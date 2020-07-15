@@ -76,3 +76,7 @@ $ sudo docker run hello-world
 
 Este comando descarga una imagen de prueba y la ejecuta en un contenedor.
 Cuando se ejecuta el contenedor, imprime un mensaje informativo y sale.
+
+$ docker run -d -p 80:80 --name web2 http
+$ docker rmi -fv web2 
+$ docker run -d -p 81:80 --name web1 nginx
